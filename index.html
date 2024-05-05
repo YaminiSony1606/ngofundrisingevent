@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NGO Event</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <!-- Index.html -->
+    <header>
+        <div class="container">
+            <img src="https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/gigs/157241451/original/83d567dca3862e64f118c9c0a295ab4b10c57c6b/do-charity-ngo-fundraising-event-and-nonprofit-organization-logo-design.jpg" alt="">
+            <nav>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="#" onclick="scrollToSection('about-us')">About Us</a></li>
+                    <li><a href="#" onclick="scrollToSection('event')">Events</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNn_SfWHDXWaerOkUu5BKwJl3aQBAUy2wQyD5bHZsO51AvooGaOjOp8W0-o_6hXlD7ApM&usqp=CAU" alt="Your Image">
+        <h1>NGO Event</h1>
+        <p>Welcome to NGO Event, where NGOs come together to create meaningful change.</p>
+        <h2>What is an NGO?</h2>
+        <p>An NGO (Non-Governmental Organization) is a non-profit organization that operates independently of any government. NGOs are typically formed to address social, environmental, or humanitarian issues.</p>
+        <h2>Our Mission</h2>
+        <p>At NGO Event, our mission is to empower NGOs to create meaningful change in their communities and beyond. We provide a platform for NGOs to connect, collaborate, and organize events that drive positive impact.</p>
+        <h2>How You Can Get Involved</h2>
+        <p>Whether you're an NGO looking to host an event or an individual interested in supporting NGO causes, there are many ways to get involved. Sign up to create or participate in events, volunteer your time, or donate to support NGO initiatives.</p>
+    </div>
+
+    
+
+    <!-- Event.html -->
+    <header class="landing-header">
+        <div class="container">
+            <h1>NGO Event Creation</h1>
+            <p>Create impactful events for your cause</p>
+            <a href="#create-event" class="btn">Create Event</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="create-event" class="create-event">
+            <div class="container">
+                <h2>Create Your Event</h2>
+                <form action="#" method="POST" class="event-form" id="event-form">
+                    <div class="form-group">
+                        <label for="event-title">Event Title:</label>
+                        <input type="text" id="event-title" name="event-title" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="event-description">Event Description:</label>
+                        <textarea id="event-description" name="event-description" rows="4" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="event-date">Event Date:</label>
+                        <input type="date" id="event-date" name="event-date" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="event-time">Event Time:</label>
+                        <input type="time" id="event-time" name="event-time" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="event-location">Event Location:</label>
+                        <input type="text" id="event-location" name="event-location" required>
+                    </div>
+                    <button type="submit">Create Event</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    
+
+    <!-- Aboutus.html -->
+    <header>
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="../index/index.html">Home</a></li>
+                    <li><a href="../Aboutuspage/aboutus.html">About Us</a></li>
+                    <li><a href="../Event/event.html">Events</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="container">
+        <img src="https://fundsforngosmedia.s3.amazonaws.com/wp-content/uploads/2016/07/28052033/ngo.png" alt="">
+        <p class="image-caption"> 
+            Our mission is to provide NGOs with the tools they need to create engaging and impactful events that raise awareness, funds, and support for their causes. Whether it's organizing a charity run, a fundraising gala, or a community cleanup event, Tech for Good is here to help NGOs every step of the way. Welcome to the event, where we empower NGOs to create meaningful events that drive positive change in their communities. At [Platform Name], we understand the critical role events play in raising awareness, fostering collaboration, and mobilizing resources for important causes.
+            NGOs are the backbone of social impact, tirelessly working towards a better world. They host a myriad of events, from fundraising galas to educational workshops, all aimed at addressing pressing issues and bringing about tangible change. However, organizing these events can often be daunting, with logistical challenges and limited resources hindering their efforts.
+            That's where events of fundraising steps in. Our platform is designed specifically to cater to the unique needs and workflows of NGOs, providing them with a seamless event creation experience. With intuitive tools and user-friendly interfaces, NGOs can effortlessly plan, promote, and manage their events from start to finish.
+            At events of fundraising, we believe in the power of technology for good. Our platform leverages the latest innovations to streamline event management processes, allowing NGOs to focus their time and energy on what matters most: making a difference. Whether it's raising awareness for a social issue or rallying support for a community project, [Platform Name] equips NGOs with the tools they need to succeed.
+            Our team is comprised of passionate individuals dedicated to supporting the mission of NGOs around the world. We're here to provide personalized assistance, answer any questions, and ensure that every event hosted on our platform is a resounding success.
+            Join us in harnessing the power of events for social change. Together, we can create a brighter future for all.
+            This narrative provides a holistic overview of the platform's mission, values, and commitment to supporting NGOs in their event creation endeavors. It emphasizes the user-friendly nature of the platform and its focus on leveraging technology for positive impact.
+        </p>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 NGO Event Creation. All rights reserved.</p>
+        </div>
+    </footer>
+    <script>
+        // JavaScript to handle form submission
+        document.getElementById("event-form").addEventListener("submit", function(event) {
+            // Prevent the default form submission
+            event.preventDefault();
+            // Show alert message
+            alert("Event successfully registered!");
+            // Optionally, you can redirect the user to another page after showing the alert
+            // window.location.href = "success.html";
+        });
+    </script>
+</body>
+</html>
